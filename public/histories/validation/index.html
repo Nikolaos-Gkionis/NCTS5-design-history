@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Validation - Design History - NCTS5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#00938c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-favicon.ico" type="image/x-icon">
+<link rel="mask-icon" href="https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-mask-icon.svg?raw=true" color="#00938c">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-apple-touch-icon.png">
+
+<link rel="stylesheet" href="/assets/govuk.css">
+
+<meta property="og:url" content="/">
+<meta property="og:title" content="Validation">
+<meta property="og:description" name="description" content="Should prototypes have validation?">
+    
+    
+    <meta property="og:image" content="/assets/opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+<header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container app-header__container">
+    <div class="govuk-header__logo app-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+<!--[if gt IE 8]><!-->
+<svg class="govuk-header__logotype-crown" aria-hidden="true" focusable="false" height="30" width="36" viewBox="0 0 132 97" xmlns="http://www.w3.org/2000/svg">
+  <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+</svg>
+<!--<![endif]-->
+<!--[if IE 8]>
+<img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+<![endif]-->
+          <span class="govuk-header__logotype-text">
+            NCTS5
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Design History
+        </span>
+      </a>
+    </div>
+    <div class="app-site-search govuk-!-display-none-print" data-module="app-site-search" data-search-index="/search.json">
+  <label class="govuk-visually-hidden" for="app-site-search__input">Search site</label>
+  <a class="app-site-search__link govuk-link-no-visited" href="/sitemap">Sitemap</a>
+</div>
+
+  </div>
+</header>
+
+
+      <div class="govuk-width-container ">
+  <div class="govuk-breadcrumbs govuk-!-display-none-print">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item" aria-current="page"></li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">NCTS5 Design History</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/histories/">Histories</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Validation</li>
+  </ol>
+</div>
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <header class="app-document-header">
+  <h1 class="app-document-header__title govuk-heading-xl">
+    Validation
+  </h1>
+</header>
+
+
+
+      <footer class="app-document-footer">
+  <p class="app-document-footer__metadata">
+  </p>
+</footer>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+<div class="app-prose-scope">
+        <h2 id="should-prototypes-have-validation%3F" tabindex="-1" class="govuk-heading-l"><a class="app-heading-anchor" href="#should-prototypes-have-validation%3F" class="govuk-link"><span>Should prototypes have validation?</span></a></h2>
+<p class="govuk-body">This has long been a debate among interaction designers and other DDaT staff in government. My personal opinion is that at least, the prototype should be as close to the real service as possible.</p>
+<p class="govuk-body">Yes, there are cases where such high fidelity is not required; having said that if your plan is to add usability testing to your user research you have to include different levels of fidelity.</p>
+<p class="govuk-body">Branching should be the first level, passing data should be the second, conditional logic should be the third and finally error validation should be the last.</p>
+<p class="govuk-body">Working on the NCTS phase 5 prototype we have used the <code class="x-govuk-code x-govuk-code--inline">HTML</code> form validation for empty fields. away. Or, click the Write button and compose something new.</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--HTML" tabindex="0"><code> <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">form</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;form&quot;</span> <span class="x-govuk-code__attr">method</span>=<span class="x-govuk-code__string">&quot;post&quot;</span>&gt;</span>
+
+      <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">span</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-caption-l&quot;</span>&gt;</span><span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">span</span>&gt;</span>
+      <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">fieldset</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-fieldset&quot;</span> <span class="x-govuk-code__attr">data-required</span> <span class="x-govuk-code__attr">data-error</span>=<span class="x-govuk-code__string">&quot; Enter the Guarantee Reference Number&quot;</span> <span class="x-govuk-code__attr">aria-required</span>=<span class="x-govuk-code__string">&quot;true&quot;</span>&gt;</span>
+      <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">div</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-form-group&quot;</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">h1</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-label-wrapper&quot;</span>&gt;</span>
+          <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">label</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-label govuk-label--l&quot;</span> <span class="x-govuk-code__attr">for</span>=<span class="x-govuk-code__string">&quot;guaranteeReference&quot;</span>&gt;</span>
+            What is the Guarantee Reference Number (GRN)?
+          <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">label</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">h1</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">div</span> <span class="x-govuk-code__attr">id</span>=<span class="x-govuk-code__string">&quot;guarantee-hint&quot;</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-hint&quot;</span>&gt;</span>
+          This can be up to 24 characters long and include both letters and numbers. For example, 01GB01234567890123A1B2C3.
+        <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">div</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">p</span>&gt;</span>You must make sure this reference is up to date.<span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">p</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">input</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-input govuk-input--width-20&quot;</span> <span class="x-govuk-code__attr">id</span>=<span class="x-govuk-code__string">&quot;guaranteeReference&quot;</span> <span class="x-govuk-code__attr">name</span>=<span class="x-govuk-code__string">&quot;guaranteeReference&quot;</span> <span class="x-govuk-code__attr">type</span>=<span class="x-govuk-code__string">&quot;text&quot;</span> <span class="x-govuk-code__attr">aria-describedby</span>=<span class="x-govuk-code__string">&quot;guaranteeReference-hint&quot;</span>&gt;</span>
+      <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">div</span>&gt;</span>
+      <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">fieldset</span>&gt;</span>
+
+      <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">div</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-button-group govuk-!-margin-top-3&quot;</span>&gt;</span>
+        <span class="x-govuk-code__tag">&lt;<span class="x-govuk-code__name">button</span> <span class="x-govuk-code__attr">class</span>=<span class="x-govuk-code__string">&quot;govuk-button&quot;</span> <span class="x-govuk-code__attr">data-module</span>=<span class="x-govuk-code__string">&quot;govuk-button&quot;</span>&gt;</span>
+          Save and continue
+        <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">button</span>&gt;</span>
+      <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">div</span>&gt;</span>
+
+    <span class="x-govuk-code__tag">&lt;/<span class="x-govuk-code__name">form</span>&gt;</span>
+</code></pre>
+
+<p class="govuk-body">Simply put, if the user does not enter or select a radio gets an error message.</p>
+<p class="govuk-body"><img src="/assets/error.png" alt="A screenshot" title="A screenshot of the error message"><br>
+<br></p>
+<p class="govuk-body">Now even thought this approach is okay, it requires javaScript injected in the /javascripts folder of the project, named <code class="x-govuk-code x-govuk-code--inline">validation.js</code>. You can copy the code below, or download it via the link on the related content.</p>
+<pre class="x-govuk-code x-govuk-code--block x-govuk-code__language--js" tabindex="0"><code><span class="x-govuk-code__comment">// Config</span>
+<span class="x-govuk-code__keyword">const</span> defaultErrorHeading = <span class="x-govuk-code__string">&quot;There is a problem&quot;</span>;
+<span class="x-govuk-code__keyword">const</span> defaultErrorDescription = <span class="x-govuk-code__string">&quot;Check the following&quot;</span>;
+<span class="x-govuk-code__keyword">const</span> defaultErrorMessage = <span class="x-govuk-code__string">&quot;There is an error&quot;</span>;
+
+<span class="x-govuk-code__keyword">function</span> <span class="x-govuk-code__title function_">clearValidation</span>(<span class="x-govuk-code__params"></span>) {
+  $(<span class="x-govuk-code__string">&quot;.govuk-error-summary&quot;</span>).<span class="x-govuk-code__title function_">remove</span>();
+
+  $(<span class="x-govuk-code__string">&quot;.govuk-form-group--error&quot;</span>).<span class="x-govuk-code__title function_">each</span>(<span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params"></span>) {
+    $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">removeClass</span>(<span class="x-govuk-code__string">&quot;govuk-form-group--error&quot;</span>);
+  });
+
+  $(<span class="x-govuk-code__string">&quot;.govuk-error-message&quot;</span>).<span class="x-govuk-code__title function_">each</span>(<span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params"></span>) {
+    $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">remove</span>();
+  });
+
+  $(<span class="x-govuk-code__string">&quot;.form-group-error&quot;</span>).<span class="x-govuk-code__title function_">each</span>(<span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params"></span>) {
+    $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">removeClass</span>(<span class="x-govuk-code__string">&quot;form-group-error&quot;</span>);
+  });
+}
+
+<span class="x-govuk-code__keyword">function</span> <span class="x-govuk-code__title function_">checkTextFields</span>(<span class="x-govuk-code__params">errors</span>) {
+  $(<span class="x-govuk-code__variable language_">document</span>)
+    .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&#x27;input[type=&quot;text&quot;],input[type=&quot;password&quot;], textarea&#x27;</span>)
+    .<span class="x-govuk-code__title function_">each</span>(<span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params"></span>) {
+      <span class="x-govuk-code__keyword">var</span> $fieldset = $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">parents</span>(<span class="x-govuk-code__string">&quot;fieldset&quot;</span>);
+      <span class="x-govuk-code__keyword">var</span> label = $(<span class="x-govuk-code__variable language_">this</span>)
+        .<span class="x-govuk-code__title function_">parent</span>()
+        .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;label&quot;</span>)
+        .<span class="x-govuk-code__title function_">clone</span>()
+        .<span class="x-govuk-code__title function_">children</span>()
+        .<span class="x-govuk-code__title function_">remove</span>()
+        .<span class="x-govuk-code__title function_">end</span>()
+        .<span class="x-govuk-code__title function_">text</span>();
+
+      <span class="x-govuk-code__keyword">if</span> (
+        $fieldset.<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;data-required&quot;</span>) !== <span class="x-govuk-code__literal">undefined</span> &amp;&amp;
+        $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">val</span>() === <span class="x-govuk-code__string">&quot;&quot;</span> &amp;&amp;
+        !$(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">parent</span>().<span class="x-govuk-code__title function_">hasClass</span>(<span class="x-govuk-code__string">&quot;js-hidden&quot;</span>)
+      ) {
+        <span class="x-govuk-code__keyword">if</span> ($(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>) === <span class="x-govuk-code__literal">undefined</span>) {
+          $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>, $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>));
+        }
+
+        errors.<span class="x-govuk-code__title function_">push</span>({
+          <span class="x-govuk-code__attr">id</span>: $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>),
+          <span class="x-govuk-code__attr">name</span>: $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>),
+          <span class="x-govuk-code__attr">errorMessage</span>: $fieldset.<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;data-error&quot;</span>) || defaultErrorMessage,
+          <span class="x-govuk-code__attr">label</span>: label,
+          <span class="x-govuk-code__attr">type</span>: <span class="x-govuk-code__string">&quot;text, password&quot;</span>,
+        });
+      }
+    });
+  <span class="x-govuk-code__keyword">return</span>;
+}
+
+<span class="x-govuk-code__keyword">function</span> <span class="x-govuk-code__title function_">checkSelectors</span>(<span class="x-govuk-code__params">errors</span>) {
+  <span class="x-govuk-code__keyword">var</span> checked = [];
+
+  $(<span class="x-govuk-code__variable language_">document</span>)
+    .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&#x27;input[type=&quot;radio&quot;], input[type=&quot;checkbox&quot;]&#x27;</span>)
+    .<span class="x-govuk-code__title function_">each</span>(<span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params"></span>) {
+      <span class="x-govuk-code__keyword">var</span> $fieldset = $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">parents</span>(<span class="x-govuk-code__string">&quot;fieldset&quot;</span>);
+      <span class="x-govuk-code__keyword">var</span> label = $fieldset
+        .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;legend&quot;</span>)
+        .<span class="x-govuk-code__title function_">clone</span>()
+        .<span class="x-govuk-code__title function_">children</span>()
+        .<span class="x-govuk-code__title function_">remove</span>()
+        .<span class="x-govuk-code__title function_">end</span>()
+        .<span class="x-govuk-code__title function_">text</span>();
+
+      <span class="x-govuk-code__keyword">if</span> (
+        $fieldset.<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;data-required&quot;</span>) !== <span class="x-govuk-code__literal">undefined</span> &amp;&amp;
+        $fieldset.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;:checked&quot;</span>).<span class="x-govuk-code__property">length</span> === <span class="x-govuk-code__number">0</span>
+      ) {
+        <span class="x-govuk-code__keyword">if</span> ($(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>) === <span class="x-govuk-code__literal">undefined</span>) {
+          $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>, $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>));
+        }
+
+        <span class="x-govuk-code__keyword">if</span> (checked.<span class="x-govuk-code__title function_">indexOf</span>($(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>)) &lt; <span class="x-govuk-code__number">0</span>) {
+          checked.<span class="x-govuk-code__title function_">push</span>($(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>));
+          errors.<span class="x-govuk-code__title function_">push</span>({
+            <span class="x-govuk-code__attr">id</span>: $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;id&quot;</span>),
+            <span class="x-govuk-code__attr">name</span>: $(<span class="x-govuk-code__variable language_">this</span>).<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;name&quot;</span>),
+            <span class="x-govuk-code__attr">errorMessage</span>: $fieldset.<span class="x-govuk-code__title function_">attr</span>(<span class="x-govuk-code__string">&quot;data-error&quot;</span>),
+            <span class="x-govuk-code__attr">label</span>: label,
+            <span class="x-govuk-code__attr">type</span>: <span class="x-govuk-code__string">&quot;text, password&quot;</span>,
+          });
+        }
+      }
+    });
+}
+
+<span class="x-govuk-code__keyword">function</span> <span class="x-govuk-code__title function_">appendErrorSummary</span>(<span class="x-govuk-code__params">errors</span>) {
+  <span class="x-govuk-code__variable language_">console</span>.<span class="x-govuk-code__title function_">log</span>(errors);
+  <span class="x-govuk-code__keyword">var</span> summaryNotPresent = $(<span class="x-govuk-code__variable language_">document</span>).<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;.govuk-error-summary&quot;</span>).<span class="x-govuk-code__property">length</span> === <span class="x-govuk-code__number">0</span>;
+  <span class="x-govuk-code__keyword">var</span> errorHTML = errors.<span class="x-govuk-code__title function_">reduce</span>(
+    <span class="x-govuk-code__function">(<span class="x-govuk-code__params">res, error</span>) =&gt;</span>
+      res + <span class="x-govuk-code__string">`&lt;li&gt;&lt;a href=&quot;#<span class="x-govuk-code__subst">${error.id}</span>&quot;&gt;<span class="x-govuk-code__subst">${error.errorMessage}</span>&lt;/a&gt;&lt;/li&gt;`</span>,
+    <span class="x-govuk-code__string">&quot;&quot;</span>
+  );
+  <span class="x-govuk-code__keyword">var</span> summary =
+    <span class="x-govuk-code__string">&#x27;&lt;div class=&quot;govuk-error-summary&quot; role=&quot;alert&quot; aria-labelledby=&quot;error-summary-title&quot; tabindex=&quot;-1&quot; data-module=&quot;govuk-error-summary&quot;&gt;&#x27;</span> +
+    <span class="x-govuk-code__string">&#x27;&lt;h2 class=&quot;govuk-error-summary__title&quot; id=&quot;error-summary-title&quot;&gt;&#x27;</span> +
+    defaultErrorHeading +
+    <span class="x-govuk-code__string">&quot;&lt;/h2&gt;&quot;</span> +
+    <span class="x-govuk-code__string">&#x27;&lt;div class=&quot;govuk-error-summary__body&quot;&gt;&#x27;</span> +
+    <span class="x-govuk-code__string">&#x27;&lt;ul class=&quot;govuk-list govuk-error-summary__list&quot;&gt;&#x27;</span> +
+    errorHTML +
+    <span class="x-govuk-code__string">&quot;&lt;/ul&gt;&quot;</span> +
+    <span class="x-govuk-code__string">&quot;&lt;/div&gt;&quot;</span> +
+    <span class="x-govuk-code__string">&quot;&lt;/div&gt;&quot;</span>;
+  <span class="x-govuk-code__keyword">if</span> (summaryNotPresent) {
+    $(<span class="x-govuk-code__string">&quot;form&quot;</span>).<span class="x-govuk-code__title function_">before</span>(summary);
+  }
+}
+
+<span class="x-govuk-code__keyword">function</span> <span class="x-govuk-code__title function_">appendErrorMessages</span>(<span class="x-govuk-code__params">errors</span>) {
+  <span class="x-govuk-code__keyword">for</span> (<span class="x-govuk-code__keyword">var</span> i = <span class="x-govuk-code__number">0</span>; i &lt; errors.<span class="x-govuk-code__property">length</span>; i++) {
+    <span class="x-govuk-code__keyword">const</span> error = errors[i];
+    <span class="x-govuk-code__keyword">const</span> $input = $(<span class="x-govuk-code__variable language_">document</span>).<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">`#<span class="x-govuk-code__subst">${error.id}</span>`</span>);
+    <span class="x-govuk-code__keyword">var</span> $formgroup = $input.<span class="x-govuk-code__title function_">parents</span>(<span class="x-govuk-code__string">&quot;.govuk-form-group&quot;</span>);
+    <span class="x-govuk-code__variable language_">console</span>.<span class="x-govuk-code__title function_">log</span>($input);
+    <span class="x-govuk-code__variable language_">console</span>.<span class="x-govuk-code__title function_">log</span>($formgroup);
+    <span class="x-govuk-code__keyword">if</span> ($formgroup.<span class="x-govuk-code__title function_">hasClass</span>(<span class="x-govuk-code__string">&quot;govuk-form-group--error&quot;</span>)) {
+      <span class="x-govuk-code__keyword">break</span>;
+    }
+
+    $formgroup.<span class="x-govuk-code__title function_">addClass</span>(<span class="x-govuk-code__string">&quot;govuk-form-group--error&quot;</span>);
+
+    <span class="x-govuk-code__keyword">if</span> (
+      $formgroup.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&#x27;input[type=&quot;text&quot;], input[type=&quot;password&quot;]&#x27;</span>).<span class="x-govuk-code__property">length</span> &gt;
+        <span class="x-govuk-code__number">0</span> ||
+      $formgroup.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;textarea&quot;</span>).<span class="x-govuk-code__property">length</span> &gt; <span class="x-govuk-code__number">0</span>
+    ) {
+      <span class="x-govuk-code__keyword">if</span> ($formgroup.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;.form-date&quot;</span>).<span class="x-govuk-code__property">length</span> &gt; <span class="x-govuk-code__number">0</span>) {
+        $formgroup
+          .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;.form-date&quot;</span>)
+          .<span class="x-govuk-code__title function_">before</span>(
+            <span class="x-govuk-code__string">&#x27;&lt;span class=&quot;gov-uk-error-message&quot;&gt;&#x27;</span> +
+              error.<span class="x-govuk-code__property">errorMessage</span> +
+              <span class="x-govuk-code__string">&quot;&lt;/span&gt;&quot;</span>
+          );
+      } <span class="x-govuk-code__keyword">else</span> {
+        $input.<span class="x-govuk-code__title function_">before</span>(
+          <span class="x-govuk-code__string">&#x27;&lt;span class=&quot;govuk-error-message&quot;&gt;&#x27;</span> + error.<span class="x-govuk-code__property">errorMessage</span> + <span class="x-govuk-code__string">&quot;&lt;/span&gt;&quot;</span>
+        );
+      }
+    } <span class="x-govuk-code__keyword">else</span> <span class="x-govuk-code__keyword">if</span> (
+      $formgroup.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&#x27;input[type=&quot;radio&quot;]&#x27;</span>).<span class="x-govuk-code__property">length</span> &gt; <span class="x-govuk-code__number">0</span> ||
+      $formgroup.<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&#x27;input[type=&quot;checkbox&quot;]&#x27;</span>)
+    ) {
+      $formgroup
+        .<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;legend&quot;</span>)
+        .<span class="x-govuk-code__title function_">append</span>(
+          <span class="x-govuk-code__string">&#x27;&lt;span class=&quot;govuk-error-message&quot;&gt;&#x27;</span> + error.<span class="x-govuk-code__property">errorMessage</span> + <span class="x-govuk-code__string">&quot;&lt;/span&gt;&quot;</span>
+        );
+    }
+  }
+}
+
+$(<span class="x-govuk-code__variable language_">document</span>).<span class="x-govuk-code__title function_">on</span>(<span class="x-govuk-code__string">&quot;submit&quot;</span>, <span class="x-govuk-code__string">&quot;form&quot;</span>, <span class="x-govuk-code__keyword">function</span> (<span class="x-govuk-code__params">e</span>) {
+  <span class="x-govuk-code__keyword">const</span> requiredFieldsPresent = $(<span class="x-govuk-code__variable language_">document</span>).<span class="x-govuk-code__title function_">find</span>(<span class="x-govuk-code__string">&quot;[data-required]&quot;</span>).<span class="x-govuk-code__property">length</span> &gt; <span class="x-govuk-code__number">0</span>;
+
+  <span class="x-govuk-code__title function_">clearValidation</span>();
+
+  <span class="x-govuk-code__keyword">if</span> (requiredFieldsPresent) {
+    <span class="x-govuk-code__keyword">const</span> errors = [];
+
+    <span class="x-govuk-code__title function_">checkTextFields</span>(errors);
+    <span class="x-govuk-code__title function_">checkSelectors</span>(errors);
+    <span class="x-govuk-code__variable language_">console</span>.<span class="x-govuk-code__title function_">log</span>(errors);
+
+    <span class="x-govuk-code__keyword">if</span> (errors.<span class="x-govuk-code__property">length</span> &gt; <span class="x-govuk-code__number">0</span>) {
+      e.<span class="x-govuk-code__title function_">preventDefault</span>();
+      <span class="x-govuk-code__title function_">appendErrorSummary</span>(errors);
+      <span class="x-govuk-code__title function_">appendErrorMessages</span>(errors);
+      $(<span class="x-govuk-code__variable language_">document</span>).<span class="x-govuk-code__title function_">scrollTop</span>(<span class="x-govuk-code__number">0</span>);
+    }
+  }
+});
+</code></pre>
+
+<p class="govuk-body">That’s all well and good if you want to use <code class="x-govuk-code x-govuk-code--inline">HTML</code> but what if you are using <code class="x-govuk-code x-govuk-code--inline">nunjucks</code>? Well, here comes the ExpressJS validator.</p>
+<p class="govuk-body">A new approach we are going to implement going forward is using the Express.js validator and the <code class="x-govuk-code x-govuk-code--inline">nunjucks</code> syntax. We have already put this into practice in the Routes section, this is still a work in progress at the time of this post.</p>
+<p class="govuk-body">This new approach requires that you add the following requirement into your dependencies package.json file <code class="x-govuk-code x-govuk-code--inline">&quot;express-validator&quot;: &quot;^6.14.2&quot;,</code> it rearranges alphabetically after you save the file.</p>
+
+</div>
+    </div>
+
+      <div class="govuk-grid-column-one-third-from-desktop">
+
+<div class="x-govuk-related-navigation">
+    <nav class="x-govuk-related-navigation__nav-section" role="navigation" aria-labelledby="related-nav-related-content">
+      <h2 class="x-govuk-related-navigation__main-heading" id="related-nav-related_items-related-content">
+        Related content
+      </h2>
+        <ul class="x-govuk-related-navigation__link-list">
+            <li class="x-govuk-related-navigation__link">
+              <a class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" href="https://github.com/Nikolaos-Gkionis/prototype-validation">Validation script</a>
+            </li>
+            <li class="x-govuk-related-navigation__link">
+              <a class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" href="https://express-validator.github.io/docs/">ExpressJS validator</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+      </div>
+  </div>
+        </main>
+      </div>
+
+<footer class="govuk-footer app-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>
+            <ul class="govuk-footer__inline-list">
+                <li class="govuk-footer__inline-list-item">
+                  <a class="govuk-footer__link" href="https://www.11ty.dev" target="_blank">
+                    Documentation for Eleventy (opens in a new tab)
+                  </a>
+                </li>
+            </ul>
+          <span class="govuk-footer__licence-description">
+            Licensed under the <a href="https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/LICENSE.txt" class="govuk-footer__link">MIT Licence</a>, except where otherwise stated
+          </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        © X-GOVUK
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/assets/govuk.js"></script>
+<script>document.documentElement.classList.remove('no-js')</script>
+  </body>
+</html>
